@@ -1,0 +1,168 @@
+
+img {
+	display: inline-block;
+	width: 20%;
+	border: black 5px solid;
+	margin: 40px;
+}
+
+.hover {
+
+}
+
+.active {
+	border-radius: 5px;
+}
+
+.focus {
+	margin-left: 50px;
+	margin-top: 50px;
+}
+
+.bar {
+	background-color: #ddd;
+	width: 80%;
+	height: 50px;
+	margin: 40px;
+	border-radius: 5px;
+	display: inline-block;
+	position: relative;
+}
+
+.square {
+	display: block;
+	position: absolute;
+	z-index: 1;
+	width: 30px;
+	height: 30px;
+	top: 10px;
+	background-color: blue;
+	border-radius: 5px;
+}
+
+/*Hover*/
+.hover:hover {
+	border-radius: 60px;
+}
+
+.active:hover {
+	box-shadow: 0 9px #999;
+	border-radius: 5px;
+	outline: none;
+}
+
+.focus:hover {
+	border: blue 10px solid;
+	outline: none;
+	margin-left: 40px;
+	margin-top: 40px;
+}
+
+.square:hover {
+	background-color: red;
+	outline: none;
+}
+
+
+
+/*Active*/
+.hover:active {
+	filter: grayscale(100%);
+	outline: none;
+}
+
+.active:active {
+	box-shadow: 0 5px #666;
+	transform: translateY(4px);
+	border-radius: 5px;
+	outline: none;
+}
+
+.focus:active {
+	opacity: 0.5;
+	outline: none;
+}
+
+.square:focus:active {
+	animation: scoobyStart 3s infinite linear;
+}
+
+.hover:active:focus {
+	outline: none;
+}
+
+.active:active:focus {
+	outline: none;
+}
+
+.focus:active:focus {
+	outline: none;
+}
+
+.square:active:focus {
+	outline: medium invert none;
+}
+
+/*Active*/
+.hover:focus {
+
+}
+
+.active:focus {
+
+}
+
+.focus:focus {
+	
+}
+
+.square:focus {
+	animation: moveBoxNoSpin 3s infinite linear;
+}
+
+/*Animations*/
+
+
+@keyframes scoobyStart {
+	0% {
+		background-color: red;
+		transform: rotateZ(-1440deg);
+	}
+	100% {
+		background-color: red;
+	}
+}
+
+@keyframes moveBoxNoSpin {
+	0% {
+		background-color: red;
+	}
+	50% {
+		transform: translateX(950px) rotateZ(1440deg);
+		background-color: purple;
+	}
+	100% {
+		transform: translateX(0px) rotateZ(-720deg);
+		background-color: blue;
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
