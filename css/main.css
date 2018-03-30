@@ -37,10 +37,6 @@ header {
   background-color: #FFF;
   border-style: solid;
   border-color: #3E0755;
-  -webkit-text-fill-color: #3E0755;
-  -moz-text-fill-color: #3E0755;
-  -webkit-opacity: 1;
-  -moz-opacity: 1;
   border-width: 0px;
   border-bottom-width: 1px;
   width: 100%;
@@ -53,8 +49,13 @@ header {
   text-align: center;
   margin: auto;
   box-sizing: border-box;
-  width: 75%; }
+  width: 75%;
+  -webkit-text-fill-color: #3E0755;
+  -moz-text-fill-color: #3E0755;
+  -webkit-opacity: 1;
+  -moz-opacity: 1; }
   #titleLink h1 {
+    font-family: 'Raleway', sans-serif;
     display: inline-block;
     font-size: 120%; }
 
