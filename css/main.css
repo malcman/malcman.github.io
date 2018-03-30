@@ -37,6 +37,10 @@ header {
   background-color: #FFF;
   border-style: solid;
   border-color: #3E0755;
+  -webkit-text-fill-color: #3E0755;
+  -moz-text-fill-color: #3E0755;
+  -webkit-opacity: 1;
+  -moz-opacity: 1;
   border-width: 0px;
   border-bottom-width: 1px;
   width: 100%;
