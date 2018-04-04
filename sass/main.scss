@@ -1,10 +1,12 @@
-$myPurple: #3E0755;
+$seaBlue: #3E0755;
 $midGray: #696969;
+$seaBlue: #093C59;
+$brightBlue: #89E8E5;
 
 *{
 	margin: 0;
 	padding: 0;
-	// border: 1px solid #000;
+	// border: 1px solid #FFF;
 }
 
 a{
@@ -25,7 +27,7 @@ header{
 }
 
 h3{
-	color: $myPurple;
+	color: $seaBlue;
 	font-family: 'Raleway', sans-serif;
 	font-size: 190%;
 	// padding-left: 10%;
@@ -45,14 +47,19 @@ h5{
 	display: inline-block;
 	text-align: left;
 	box-sizing: border-box;
-	margin-left: 20px;
+	// margin-left: 20px;
+	margin-top: -10%;
 	width: 10%;
 	cursor: pointer;
 	font-size: 120%;
+	position: absolute;
+	left: 20px;
+	top: 50px;
 
 }
 
 #close{
+	color: $seaBlue;
 	background-color: #FFF;
 	text-align: left;
 	cursor: pointer;
@@ -64,11 +71,12 @@ h5{
 #titleLink{
 	text-align: center;
 	margin: auto;
-	margin-left: 5%;
+	// padding-left: -15%;
 	box-sizing: border-box;
-	width: 75%;
-	-webkit-text-fill-color: $myPurple; 
-	-moz-text-fill-color: $myPurple; 
+	width: 100%;
+	height: 100%;
+	-webkit-text-fill-color: $seaBlue; 
+	-moz-text-fill-color: $seaBlue; 
 	-webkit-opacity: 1;
 	-moz-opacity: 1;
 	h1 {
@@ -76,6 +84,15 @@ h5{
 		display: inline-block;
 		font-size: 120%;
 	}
+	img{
+		height: 60px;
+		margin: auto;
+	}
+}
+
+#homelink{
+	height:60px;
+	box-sizing: border-box;
 }
 
 #navhome{
@@ -129,20 +146,28 @@ h5{
 .titleBar{
 	box-sizing: border-box;
 	display: inline-block;
-	background-color: #FFF;
+	// position: relative;
+	// background-color: #FFF;
+	background-color: $seaBlue;
 	border-style: solid;
-	border-color: $myPurple;
+	// border-color: $seaBlue;
+
+	border-color: #FFF;
 	border-width: 0px;
 	border-bottom-width: 1px;
 	width: 100%;
-	color: $myPurple;
+	// height: 50px;
+	// color: $seaBlue;
+	color: #FFF;
 	font-family: 'Raleway', sans-serif;
 	font-size: 2em;
 	transition: all 400ms;
+	// height: 3em;
+	// line-height: 2em;
 }
 
 .mobile-sidebar{
-	display: inline-block;
+	display: block;
 }
 
 .mobile{
@@ -154,8 +179,8 @@ h5{
 	height: 100vh;
 	z-index: 10;
 	transition: all 400ms;
-	background-color: $myPurple;
-    box-shadow: 8px 0px 5px #888888;
+	background-color: $seaBlue;
+    box-shadow: 8px 0px 5px rgba(0,0,0,0.3);
 	a{
 		color: #FFF;
 		h2{
@@ -165,12 +190,17 @@ h5{
 			border-right-width: 0px;
 			border-left-width: 0px;
 		}
+		:hover{
+			text-decoration: underline;
+		}
 	}
 }
 
 .current-page{
-	background-color: $midGray;
-	text-decoration: underline;
+	background-color: $brightBlue;
+	a{
+		color: $seaBlue;
+	}
 }
 
 .leftmost{
@@ -213,7 +243,7 @@ h5{
 	margin-bottom: 5%;
 	display: block;
 	box-shadow: 0px 0px 5px rgba(141, 141, 139, .75);
-	border: solid 1px $myPurple;
+	border: solid 1px $seaBlue;
 	border-radius: 5px;
 	position: relative;
 }
@@ -246,16 +276,16 @@ h5{
 footer{
 	background-color: #FFF;
 	border-style: solid;
-	border-color: $myPurple;
+	border-color: $seaBlue;
 	border-width: 0px;
 	border-top-width: 1px;
 	width: 100%;
 	height: 50px;
-	color: $myPurple;
+	color: $seaBlue;
 	font-family: 'Raleway', sans-serif;
 	font-size: 190%;
 	text-align: center;
 	margin: auto;
-	margin-top: 70px;
+	margin-top: 40px;
 }
 
