@@ -22,36 +22,19 @@
 				<nav id="menu">
 					<ul>
 						<li id="navhome"><a href="index.html" tabindex="3"><h2>Home</h2></a></li>
-						<li id="navresume"><a href="resume.html" tabindex="4"><h2>Resume</h2></a></li>
+						<li id="navresume" class="current-page"><a href="resume.html" tabindex="4"><h2>Resume</h2></a></li>
 						<li id="navprojects"><a href="projects.html" tabindex="5"><h2>Projects</h2></a></li>
 						<li id="navthoughts"><a href="thoughts.html" tabindex="6"><h2>Thoughts</h2></a></li>
-						<li id="navcontact" class="current-page"><a onblur="toggleMenu()" href="contact.html" tabindex="7"><h2>Contact</h2></a></li>
+						<li id="navcontact" ><a onblur="toggleMenu()" href="contact.html" tabindex="7"><h2>Contact</h2></a></li>
 					</ul>
 				</nav>
 			</div>
 		</div>
 	</header>
-	<div class="content"><br>
-		<h3>Contact Me</h3><br>
-		<p>I'm always interested in a little genuine human contact; drop me a line.</p><br><br>
-		<div class="disp-grid" id="contact-grid">
-			<h4>Email:</h4><br>
-			<a href="mailto:malc@umich.edu?subject=Getting in Touch">
-				<div class="grid-cell">
-					<div class="bkg-cell" id="email-box"></div>
-					<div class="sub-grid-cell">malc@umich.edu</div>
-				</div>
-			</a>
-			<h4>Phone:</h4><br>
-			<a href="tel:1-231-823-4022">
-				<div class="grid-cell">
-					<div class="bkg-cell" id="phone-box"></div>
-					<div class="sub-grid-cell">Click to call</div>
-				</div><br>
-			</a>
-			<h4>LinkedIn:</h4><br>
-			<p>Sorry, I don't believe in the premise of LinkedIn. It's a bit too fake and contrived for me to pretend to care about it.</p><br><br>
-		</div>
+	<div class="content" id="resume"><br>
+		<h3>Resume</h3><br>
+		<a href="pdf/MaturenResumeW18.pdf" download>Click to Download Resume</a><br><br>
+		<embed src="pdf/MaturenResumeW18.pdf" type='application/pdf' id="resume-embed">
 	</div>
 	<script src="js/main.js"></script>
 	<footer>This is a footer</footer>

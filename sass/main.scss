@@ -10,7 +10,11 @@ $brightBlue: #89E8E5;
 }
 
 a{
+	color: $seaBlue;
 	text-decoration: none;
+	[href$= ".pdf"]{
+		background-image: url(../img/pdf-icon);
+	}
 }
 
 div{
@@ -23,20 +27,19 @@ header{
 	z-index: 5;
 	top: 0;
 	width: 100%;
-	// height: 90px;
 }
 
 h3{
 	color: $seaBlue;
 	font-family: 'Raleway', sans-serif;
 	font-size: 190%;
-	// padding-left: 10%;
 }
 
 h4{
 	color: $midGray;
 	-webkit-text-fill-color: $midGray; 
 	-moz-text-fill-color: $midGray; 
+	font-size: 16pt;
 }
 
 h5{
@@ -47,14 +50,12 @@ h5{
 	display: inline-block;
 	text-align: left;
 	box-sizing: border-box;
-	// margin-left: 20px;
-	margin-top: -10%;
 	width: 10%;
 	cursor: pointer;
 	font-size: 120%;
 	position: absolute;
 	left: 20px;
-	top: 50px;
+	top: 5px;
 
 }
 
@@ -71,7 +72,6 @@ h5{
 #titleLink{
 	text-align: center;
 	margin: auto;
-	// padding-left: -15%;
 	box-sizing: border-box;
 	width: 100%;
 	height: 100%;
@@ -88,6 +88,17 @@ h5{
 		height: 60px;
 		margin: auto;
 	}
+}
+
+#resume{
+	width: 80vw;
+	height: 85vh;
+	margin-bottom: 20vh;
+}
+
+#resume-embed{
+	width: 100%;
+	height: 100%;
 }
 
 #homelink{
@@ -143,27 +154,31 @@ h5{
 	height: 65%;
 }
 
+#sql-box{
+	background-image: url(../img/sqlIcon.png);
+	height: 65%;
+}
+
+#phone-box{
+	background-image: url(../img/phoneIcon.png);
+}
+
+#email-box{
+	background-image: url(../img/gmailIcon.png);
+}
+
+
 .titleBar{
 	box-sizing: border-box;
 	display: inline-block;
-	// position: relative;
-	// background-color: #FFF;
 	background-color: $seaBlue;
 	border-style: solid;
-	// border-color: $seaBlue;
-
-	border-color: #FFF;
 	border-width: 0px;
-	border-bottom-width: 1px;
 	width: 100%;
-	// height: 50px;
-	// color: $seaBlue;
 	color: #FFF;
 	font-family: 'Raleway', sans-serif;
 	font-size: 2em;
 	transition: all 400ms;
-	// height: 3em;
-	// line-height: 2em;
 }
 
 .mobile-sidebar{
@@ -182,6 +197,7 @@ h5{
 	background-color: $seaBlue;
     box-shadow: 8px 0px 5px rgba(0,0,0,0.3);
 	a{
+		height: 100%;
 		color: #FFF;
 		h2{
 			font-size: 16pt;
@@ -230,10 +246,16 @@ h5{
 	}
 }
 
-.skills-grid{
+.disp-grid{
 	display: grid;
-	grid-template-columns: 1fr;
-	grid-template-rows: repeat(1fr, 7);
+	#skills-grid{
+		grid-template-columns: 1fr;
+		grid-template-rows: repeat(1fr, 8);
+	}
+	#contact-grid{
+		grid-template-columns: 1fr;
+		grid-template-rows: repeat(1fr, 2);
+	}
 }
 
 .grid-cell{

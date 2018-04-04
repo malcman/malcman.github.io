@@ -8,7 +8,7 @@
 	<!-- Raleway font -->
 	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
 	<link rel="icon" type="image/png" href="img/myFavicon.png">
-	
+
 </head>
 <body>
 	<header class="titleBar">
@@ -17,33 +17,71 @@
 		</div>
 		<div id="toggle" onclick="toggleMenu()" onfocus="toggleMenu()" tabindex="2">&#9776;</div>
 		<div class="mobile-sidebar">
-			<!-- <div id="toggle" onclick="toggleMenu()" onfocus="toggleMenu()" tabindex="2">&#9776;</div> -->
 			<div class="mobile">
 				<div id="close" onclick="toggleMenu()">X</div>
 				<nav id="menu">
 					<ul>
 						<li id="navhome"><a href="index.html" tabindex="3"><h2>Home</h2></a></li>
-						<li id="navprojects" class="current-page"><a href="projects.html" tabindex="4"><h2>Projects</h2></a></li>
-						<li id="navthoughts"><a href="thoughts.html" tabindex="5"><h2>Thoughts</h2></a></li>
-						<li id="navcontact"><a onblur="toggleMenu()" href="contact.html" tabindex="5"><h2>Contact</h2></a></li>
+						<li id="navresume"><a href="resume.html" tabindex="4"><h2>Resume</h2></a></li>
+						<li id="navprojects" class="current-page"><a href="projects.html" tabindex="5"><h2>Projects</h2></a></li>
+						<li id="navthoughts"><a href="thoughts.html" tabindex="6"><h2>Thoughts</h2></a></li>
+						<li id="navcontact"><a onblur="toggleMenu()" href="contact.html" tabindex="7"><h2>Contact</h2></a></li>
 					</ul>
 				</nav>
 			</div>
 		</div>
-<!-- 		<div id="titleLink">
-			<a href="index.html" id="homelink" tabindex="1"><h1>Malc's Portfolio</h1></a>		
-		</div> -->
 	</header>
 	<div class="content"><br>
 		<h3>My Projects</h3><br>
-		<p> I don't know how you made it here. I'm just a boy, thinking that his web development skills matter while others struggle to find food. Sure, maybe I'll 
-			take on the medical scene some day and bring something that qualifies as user experience to doctors around the world. And I'll tell myself I did something. Or
-			maybe I won't. And I'll tell myself I did something. I guess all I'm getting at is that it's difficult to think anyone would ever want to read about another
-		privledged American while real systematic suffering continues.</p> 
-			<br><p>Anyways, here's some filler text so I can test my site. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-			<br><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-		<br><br>
-	<!-- <footer>This is a footer</footer> -->
+		<h4>Political Times</h4><br>
+		<b>Ultimate Goal:</b><p>Help improve social media responsibilty and literacy with political leaning assessment tools.</p><br>
+		<b>Process:</b><p>REST APIs were used to scrape posts from social media sites of popular news networks. Due to time and data constraints, 
+		a pre-trained model was used to assess the political tendencies of each site. Of course, this created drawbacks of not having direct control
+		over the model and weights. On the other hand, I could thus guarantee that my own biases did not affect the results. The plot.ly API was used
+		to visualize the results stored in a SQL database.</p><br>
+		<b>Future:</b><p>Continue to do research to create dashboards or visualizations that improve social media literacy. Find ways to accumulate 
+		quality data. Involve experts to avoid biases during labeling. Develop custom model.</p><br>
+		<b>Skills Used:</b><br><br>
+		<div class="disp-grid" id="skills-grid">
+			<div class="grid-cell">
+				<div class="bkg-cell" id="python-box"></div>
+				<div class="sub-grid-cell">Python</div>
+			</div>
+			<div class="grid-cell">
+				<div class="bkg-cell" id="sql-box"></div>
+				<div class="sub-grid-cell">SQL</div>
+			</div>
+		</div><br>
+
+		<h4>Log Manager</h4><br>
+		<b>Goal:</b><p>Create fast and efficient error log manager to create excerpt list using timestamps, keywords, and categories.</p><br>
+		<b>Process:</b><p>A vector of structs was created to hold the log entries. After being read in, they were sorted by timestamp to 
+		optimize for retrieval and memory storage later on. Unordered maps of keywords and categories were also created to allow for quick search. Searches
+		returned results that the user could choose to add to an excerpt list (deque). </p><br>
+		<b>Skills Used:</b><br><br>
+		<div class="disp-grid" id="skills-grid">
+			<div class="grid-cell">
+				<div class="bkg-cell" id="cpp-box"></div>
+				<div class="sub-grid-cell">C++</div>
+			</div>
+		</div><br>
+
+		<h4>Galaxy Conference Identity</h4><br>
+		<b>Goal:</b><p>Develop logotype, identity language, and mobile application mockups for sustainability conference.</p><br>
+		<b>Process:</b><p>A logotype was first created, considering the goals of the conference and name associations. User interface 
+		elements were then developed using shades of the existing color palette and free-space guidelines. Finally, a hifi application 
+		mockup was created using an existing client-specified wireframe.</p><br>
+		<b>Skills Used:</b><br><br>
+		<div class="disp-grid" id="skills-grid">
+			<div class="grid-cell">
+				<div class="bkg-cell" id="ai-box"></div>
+				<div class="sub-grid-cell">Adobe Illustrator</div>
+			</div>
+			<div class="grid-cell">
+				<div class="bkg-cell" id="ps-box"></div>
+				<div class="sub-grid-cell">Adobe Photoshop</div>
+			</div>
+		</div><br>
 	</div>
 	<script src="js/main.js"></script>
 	<footer>This is a footer</footer>
