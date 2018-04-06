@@ -18,7 +18,7 @@
       border-radius: 5px; }
 
   .content {
-    top: 160px; }
+    top: 60px; }
 
   #homelink img {
     height: 70px; }
@@ -54,7 +54,10 @@
 
   #contact-grid {
     grid-template-columns: 1fr;
-    grid-template-rows: repeat(2, 1fr); } }
+    grid-template-rows: repeat(2, 1fr); }
+
+  .titleBar {
+    position: relative; } }
 @media only screen and (min-width: 1000px) {
   .content {
     top: 60px;

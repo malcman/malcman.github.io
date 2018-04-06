@@ -23,7 +23,7 @@
 	}
 
 	.content{
-		top: 160px;
+		top: 60px;
 	}
 
 	#homelink{
@@ -77,6 +77,10 @@
 	#contact-grid{
 		grid-template-columns: 1fr;
 		grid-template-rows: repeat(2, 1fr);
+	}
+
+	.titleBar{
+		position: relative;
 	}
 }
 
