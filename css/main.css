@@ -8,6 +8,9 @@ a {
   a [href$=".pdf"] {
     background-image: url(../img/pdf-icon); }
 
+p, b, li, div {
+  font-family: 'Libre Baskerville', serif; }
+
 div {
   display: inline-block; }
 
@@ -26,7 +29,8 @@ h4 {
   color: #696969;
   -webkit-text-fill-color: #696969;
   -moz-text-fill-color: #696969;
-  font-size: 16pt; }
+  font-size: 16pt;
+  font-family: 'Raleway', sans-serif; }
 
 h5 {
   text-decoration: underline; }
@@ -40,7 +44,8 @@ h5 {
   font-size: 120%;
   position: absolute;
   left: 20px;
-  top: 5px; }
+  top: 5px;
+  font-family: 'Raleway', sans-serif; }
 
 #close {
   color: #093C59;
@@ -49,7 +54,8 @@ h5 {
   cursor: pointer;
   margin: 10px 5px 5px 5px;
   padding: 0px 8px;
-  border-radius: 50%; }
+  border-radius: 50%;
+  font-family: 'Raleway', sans-serif; }
 
 #titleLink {
   text-align: center;
@@ -70,7 +76,7 @@ h5 {
     margin: auto; }
 
 #resume {
-  height: 80vh;
+  height: 70vh;
   margin-bottom: 20vh; }
 
 #resume-embed {
@@ -78,7 +84,7 @@ h5 {
   height: 100%; }
 
 #resume-footer {
-  margin-top: 20vh; }
+  margin-top: 30%; }
 
 #homelink {
   height: 60px;
@@ -108,7 +114,15 @@ h5 {
   height: 50%;
   line-height: 35vh;
   margin-bottom: 10%;
-  border-radius: 5px; }
+  border-radius: 10px; }
+
+#footer-logo {
+  display: inline-block;
+  margin: auto;
+  width: 30%;
+  position: absolute;
+  bottom: 15%;
+  left: 30%; }
 
 #cpp-box {
   background: url(../img/cpp.png);
@@ -182,7 +196,8 @@ h5 {
       padding: 10%;
       border: 1px solid white;
       border-right-width: 0px;
-      border-left-width: 0px; }
+      border-left-width: 0px;
+      font-family: 'Raleway', sans-serif; }
     .mobile a :hover {
       text-decoration: underline; }
 
@@ -205,7 +220,8 @@ h5 {
     position: relative;
     float: right;
     width: 40%;
-    margin-left: 5%; }
+    margin-left: 5%;
+    max-width: 330px; }
     .content #profpic img {
       width: 100%;
       border-radius: 5px; }
@@ -214,6 +230,7 @@ h5 {
     text-indent: 5%; }
 
 .disp-grid {
+  grid-row-gap: 10px;
   display: grid; }
   .disp-grid #skills-grid {
     grid-template-columns: 1fr;
@@ -222,11 +239,16 @@ h5 {
     grid-template-columns: 1fr;
     grid-template-rows: repeat(1fr, 2); }
 
+.two-disp-grid {
+  grid-row-gap: 10px;
+  display: grid;
+  grid-template-columns: 1fr; }
+
 .grid-cell {
   width: 80%;
   margin: auto;
   height: 100px;
-  margin-bottom: 5%;
+  max-width: 420px;
   display: block;
   box-shadow: 0px 0px 5px rgba(141, 141, 139, 0.75);
   border: solid 1px #093C59;
@@ -285,6 +307,13 @@ footer {
   font-family: 'Raleway', sans-serif;
   font-size: 10pt;
   margin: auto;
-  margin-top: 40px; }
+  margin-top: 20%; }
+  footer img {
+    display: inline-block;
+    margin: auto;
+    width: 30%;
+    position: absolute;
+    bottom: 15%;
+    left: 30%; }
 
 /*# sourceMappingURL=main.css.map */
