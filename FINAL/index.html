@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" href="css/main.css">
+	<title>Maturen SI 339 Final</title>
+</head>
+<body>
+	<h1>Malcolm Maturen</h1>
+	<div id="images">
+		<img id="colleen" src="images/examPic.JPG" alt="Pic of Colleen and some people that look a lot like her">
+		<img id="logo" src="images/UMSI-logo.jpg" alt="UMSI Logo">
+	</div>
+	<div id="buttons">
+		<button id="hide" onclick="hideImg()">Hide Image</button>
+		<button id="show" onclick="showImg()">Show Image</button>
+	</div>
+	<script>
+	function hideImg(){
+		var image = document.getElementById("colleen");
+		var logo = document.getElementById("logo");
+		if (image.style.display != "none") {
+			image.style.display = "none";
+			logo.style.margin = "auto";
+			logo.style.float = "none";
+		}
+	}
+	function showImg(){
+		var image = document.getElementById("colleen");
+		var logo = document.getElementById("logo");
+		if (image.style.display == "none") {
+			image.style.display = "block";
+			logo.style.margin = "0";
+			logo.style.float = "left";
+		}
+	}
+	</script>
+</body>
+</html>
